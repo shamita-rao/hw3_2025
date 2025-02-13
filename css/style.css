@@ -30,126 +30,126 @@ nav a:focus {
 
 
 /* Step 4: Write selector/rule property to style the container */
-@media (max-width: 753px) {
-     .container {
-          display: grid;
-          grid-template-columns: 1fr 5fr 1fr;
-          grid-auto-rows: auto;
-          row-gap: 15px;
-     }
 
-     /* Step 5: Write selector/rule property to add the background image to the first div in the grid and place it in the grid. */
-     .container>*:first-child {
-          grid-column: 1 / -1;
-          background-image: url('../images/header.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-     }
+.container {
+     display: grid;
+     grid-template-columns: 1fr 5fr 1fr;
+     grid-auto-rows: auto;
+     row-gap: 15px;
+}
 
-     /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
-     four rows in the grid. */
-     /*This will be a lot of rules.... but be strategic and combine selectors*/
-     .about,
-     .method,
-     .clients,
-     .contact {
-          grid-column: 2 / 3;
-     }
+/* Step 5: Write selector/rule property to add the background image to the first div in the grid and place it in the grid. */
+.container>*:first-child {
+     grid-column: 1 / -1;
+     background-image: url('../images/header.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
 
-     .about {
-          grid-row: 2;
-     }
+/* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
+four rows in the grid. */
+/*This will be a lot of rules.... but be strategic and combine selectors*/
+.about,
+.method,
+.clients,
+.contact {
+     grid-column: 2 / 3;
+}
 
-     .method {
-          grid-row: 3;
-     }
+.about {
+     grid-row: 2;
+}
 
-     .clients {
-          grid-row: 4;
-     }
+.method {
+     grid-row: 3;
+}
 
-     .contact {
-          grid-row: 5;
-     }
+.clients {
+     grid-row: 4;
+}
 
-
-     .about-image,
-     .method-image,
-     .clients-image,
-     .contact-image {
-          grid-column: 1 / -1;
-          max-height: 600px;
-          overflow: hidden;
-     }
-
-     .about-image {
-          grid-row: 2;
-     }
-
-     .method-image {
-          grid-row: 3;
-     }
-
-     .clients-image {
-          grid-row: 4;
-     }
-
-     .contact-image {
-          grid-row: 5;
-     }
-
-
-     /* Step 8: Write the selector/rule property to style the .text-block class. */
-     .text-block {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          width: fit-content;
-          max-width: 100%;
-          margin: auto;
-     }
+.contact {
+     grid-row: 5;
 }
 
 
+.about-image,
+.method-image,
+.clients-image,
+.contact-image {
+     grid-column: 1 / -1;
+     max-height: 600px;
+     overflow: hidden;
+}
+
+.about-image {
+     grid-row: 2;
+}
+
+.method-image {
+     grid-row: 3;
+}
+
+.clients-image {
+     grid-row: 4;
+}
+
+.contact-image {
+     grid-row: 5;
+}
+
+
+/* Step 8: Write the selector/rule property to style the .text-block class. */
+.text-block {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     width: fit-content;
+     max-width: 100%;
+     margin: auto;
+}     
+
+
+
 /* Add your media query here */
-@media (min-width: 800px) {
+@media all and (min-width: 900px) {
 
-    /* Step 9: Write the selector/rule property to style the nav element */
-    nav {
-          display: flex;
-          justify-content: flex-end;
-          padding: 30px 0;
-    }
-
-    /* Step 10: Write the selector/rule property to update the .container class */
-    .container {
-          display: grid;
-          grid-template-columns: 50px auto 500px auto 50px;
-          gap: 15px;
-    }
-
-    /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
-    .about,
-    .clients,
-    .method-image,
-    .contact-image {
-          grid-column: 3 / span 2;
-    }
-
-    .method,
-    .contact,
-    .about-image,
-    .clients-image {
-          grid-column: 2 / span 2;
-    }
-
-    /* Step 13:Write the selector/rule property to update the .text-block class */
-    .text-block {
-          max-height: 250px;
-          overflow: auto;
-    }
+     /* Step 9: Write the selector/rule property to style the nav element */
+     nav {
+           display: flex;
+           justify-content: flex-end;
+           padding: 30px 0;
+     }
+ 
+     /* Step 10: Write the selector/rule property to update the .container class */
+     .container {
+           display: grid;
+           grid-template-columns: 50px auto 500px auto 50px;
+           gap: 15px;
+     }
+ 
+     /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+     .about,
+     .clients,
+     .method-image,
+     .contact-image {
+           grid-column: 3 / span 2;
+     }
+ 
+     .method,
+     .contact,
+     .about-image,
+     .clients-image {
+           grid-column: 2 / span 2;
+     }
+ 
+     /* Step 13:Write the selector/rule property to update the .text-block class */
+     .text-block {
+           max-height: 250px;
+           overflow: auto;
+     }
 }

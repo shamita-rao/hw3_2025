@@ -105,6 +105,8 @@ four rows in the grid. */
      text-align: center;
      width: fit-content;
      margin: auto;
+     max-width: 100%;
+     overflow: hidden;
 }
 
 
@@ -143,6 +145,6 @@ four rows in the grid. */
      /* Step 13:Write the selector/rule property to update the .text-block class */
      .text-block {
            max-height: 250px;
-           overflow: auto;
+           overflow: hidden;
      }
 }

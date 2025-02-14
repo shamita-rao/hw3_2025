@@ -144,8 +144,8 @@ four rows in the grid. */
  
      /* Step 13:Write the selector/rule property to update the .text-block class */
      .text-block {
-          max-height: 250px;
-          width: fit-content;
-          overflow: hidden;
+           max-height: 250px;
+           overflow: hidden;
+           width: fit-content;
      }
 }
